@@ -329,45 +329,86 @@ Project due March 30th.
     HTML, CSS, Javascrip
 */
 
-const s = "Hello World";
-console.log(s.length);
-let something = true;
+// const s = "Hello World";
+// console.log(s.length);
+// let something = true;
 
-x = something.__proto__; // tells you what class and methods that are applicable in the console
-console.log(x.toString()); //.toString() is a method. not a property like .
-let k = 'josh5678';
+// x = something.__proto__; // tells you what class and methods that are applicable in the console
+// console.log(x.toString()); //.toString() is a method. not a property like .
+// let k = 'josh5678';
 
 // console.log(k);
 // let matches = k.match(/(\d+)/);
 // console.log(matches[0]);
 
 
-x = 13;
+// x = 13;
 
-console.log(Math.pow(x, 2));
+// console.log(Math.pow(x, 2));
 
 /**
  *  There is a difference between Boolean primities and Boolean objects. 
  */
 
-const arr = [1, 'string', null];
-for(var i = 0; i < arr.length; i++) {
-    console.log(arr.at(i));
+// const arr = [1, 'string', null];
+// for(var i = 0; i < arr.length; i++) {
+//     console.log(arr.at(i));
+// }
+
+// console.log(arr);
+
+// arr.push('crazy');
+
+// console.log(arr);
+
+// arr.pop();
+
+// console.log(arr);
+
+// arr.shift();
+// arr.shift();
+// arr.shift();
+
+// console.log(arr);
+
+// let person = {
+//     name: "mary",
+//     age: 30,
+//     hasChildren: true,
+// }
+
+// const str = JSON.stringify(person);
+// console.log(str);
+// const str2 = JSON.parse(str);
+// console.log(str2);
+
+// const arrow2 = (a) => {
+// console.log(a);
+// }
+
+// arrow2("josh");
+
+function saya(a) {
+    console.log(a)
 }
 
-console.log(arr);
+saya("yo");
 
-arr.push('crazy');
+// const materials = ['Hydrogen', 'Helium', 'Lithium', 'Beryllium'];
 
-console.log(arr);
+// console.log(materials.map((material) => material.length));
+// // Expected output: Array [8, 6, 7, 9]\
 
-arr.pop();
+const items = ['you', 'are', 'so', 'cool'];
+const numbers = [1, 2, 3, 4, 5];
 
-console.log(arr);
+function concat(array) {
+    var sentence = "";
+    for(const item of array) {
+        sentence += item + " " ;
+    }
+    console.log(sentence);
+}
 
-arr.shift();
-arr.shift();
-arr.shift();
-
-console.log(arr);
-
+concat(items);
+concat(numbers);
